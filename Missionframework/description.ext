@@ -8,11 +8,11 @@ allowFunctionsLog = 0;
 unsafeCVL = 1;
 
 briefingName = $STR_MISSION_TITLE;
-overviewText = "www.killahpotatoes.de";
+overviewText = "kimchiguys.co.kr";
 overviewPicture = "res\lib.paa";
-author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer";
+author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer, [KG] GOGURYEO";
 onLoadName = $STR_MISSION_TITLE;
-onLoadMission = "www.killahpotatoes.de";
+onLoadMission = "kimchiguys.co.kr";
 loadScreen = "res\lib.paa";
 
 joinUnassigned = 1;

@@ -2,6 +2,7 @@ enableSaving [ false, false ];
 
 if (isDedicated) then {debug_source = "Server";} else {debug_source = name player;};
 
+["all"] execVM "player_markers.sqf";
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\liberation_functions.sqf";
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\init_sectors.sqf";
 if (!isServer) then {waitUntil {!isNil "KP_serverParamsFetched"};};

@@ -112,7 +112,8 @@ while {true} do {
         };
     };
 
-    if ((_fobdistance < _distredeploy || count KP_liberation_neararsenal != 0 || count KP_liberation_nearspawn != 0 || (player distance startbase) < 200) && alive player && vehicle player == player) then {
+    private _nears = player nearObjects ["B_supplyCrate_F", 6];
+    if ((_fobdistance < _distredeploy || count KP_liberation_neararsenal != 0 || count KP_liberation_nearspawn != 0 || (player distance startbase) < 200 || count _nears >= 1) && alive player && vehicle player == player) then {
         if (_idact_arsenal == -1) then {
             _idact_arsenal = player addAction ["<t color='#FFFF00'>" + localize "STR_ARSENAL_ACTION" + "</t> <img size='2' image='res\ui_arsenal.paa'/>","scripts\client\actions\open_arsenal.sqf","",-980,true,true,"","build_confirmed == 0"];
         };
